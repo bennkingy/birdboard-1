@@ -13,15 +13,9 @@
 
     <div class="container">
 
-        <h1>Projects</h1>
+        <h1>{{ $project->title }}</h1>
 
-        <ul>
-            @forelse($projects as $project)
-                <li><a href="{{ $project->path() }}">{{ $project->title }}</a></li>
-            @empty
-                <li>No projects</li>
-            @endforelse
-        </ul>
+        <p>{{ $project->description }}</p>
 
     </div>
 
@@ -32,3 +26,4 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+

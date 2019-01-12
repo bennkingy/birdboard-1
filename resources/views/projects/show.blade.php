@@ -28,7 +28,6 @@
                     <div class="card mb-3">Lorem ipsum.</div>
                     <div class="card">Lorem ipsum.</div>
 
-
                 </div>
 
                 <div>
@@ -41,7 +40,7 @@
 
             </div>
 
-            <div class="lg:w-1/4 px-3">
+            <div class="lg:w-1/4 px-3 mt-8">
 
                @include('projects.card')
 

@@ -26,7 +26,7 @@
                 <div class="flex justify-between items-center py-2">
 
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <img src="/images/logo.png" alt="{{ config('app.name', 'Laravel') }}" class="lg:w-1/3">
                     </a>
 
                     <div>

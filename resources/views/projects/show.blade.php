@@ -22,11 +22,11 @@
 
                     <h2 class="text-lg text-grey font-normal mb-3">Tasks</h2>
 
-                    <div class="card mb-3">Lorem ipsum.</div>
-                    <div class="card mb-3">Lorem ipsum.</div>
-                    <div class="card mb-3">Lorem ipsum.</div>
-                    <div class="card mb-3">Lorem ipsum.</div>
-                    <div class="card">Lorem ipsum.</div>
+                    @forelse($project->tasks as $task)
+                        <div class="card mb-3">{{ $task }}</div>
+                    @empty
+                        <div class="card mb-3">No tasks yet.</div>
+                    @endforelse
 
                 </div>
 
